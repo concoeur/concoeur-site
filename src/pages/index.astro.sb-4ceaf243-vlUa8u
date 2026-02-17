@@ -1,0 +1,53 @@
+<html lang="sv">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CONCOEUR</title>
+    <meta name="description" content="CONCOEUR. Advanced Hyperbaric & Oxygen Medicine." />
+    <style is:global>
+      body { 
+        margin:0; 
+        font-family: "Times New Roman", Times, serif; 
+        background:#fbfaf7; 
+        color:#111; 
+      }
+      .wrap { max-width: 980px; margin: 0 auto; padding: 64px 20px; }
+      h1 { font-size: 54px; line-height: 1.05; margin: 10px 0 12px; letter-spacing: 0.04em; }
+      p { color:#555; line-height: 1.6; max-width: 70ch; }
+      .row { margin-top: 18px; display:flex; gap: 12px; flex-wrap: wrap; }
+      a.btn { 
+        display:inline-block; 
+        padding: 12px 16px; 
+        border-radius: 12px; 
+        border:1px solid #111; 
+        text-decoration:none; 
+        font-style: italic;   /* kursiv för knapparna */
+      }
+      a.primary { background:#111; color:#fbfaf7; }
+      .grid { display:grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 14px; margin-top: 28px; }
+      .card { border:1px solid #ddd; border-radius: 16px; padding: 16px; background: rgba(255,255,255,.4); }
+      .card b { display:block; margin-bottom: 8px; }
+      footer { margin-top: 54px; border-top: 1px solid #ddd; padding-top: 18px; color:#555; font-size: 13px; }
+      @media (max-width: 820px){ h1{font-size:40px;} .grid{grid-template-columns:1fr;} }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <h1>CONCOEUR</h1>
+      <p>Advanced Hyperbaric & Oxygen Medicine, delivered in a discreet clinical setting.</p>
+
+      <div class="row">
+        <a class="btn primary" href="/boka"><em>Boka tid</em></a>
+        <a class="btn" href="/kontakt"><em>Kontakt</em></a>
+      </div>
+
+      <div class="grid">
+        <div class="card"><b>Refined protocols</b>Standardiserade rutiner och tydliga kriterier.</div>
+        <div class="card"><b>Clinical governance</b>Fokus på säkerhet, dokumentation och kvalitet.</div>
+        <div class="card"><b>Discreet environment</b>Lågmält, privat och professionellt.</div>
+      </div>
+
+      <footer>© Concoeur AB</footer>
+    </div>
+  </body>
+</html>
