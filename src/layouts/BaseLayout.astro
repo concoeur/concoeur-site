@@ -8,6 +8,19 @@ const { title = "CONCOEUR" } = Astro.props;
     <title>{title}</title>
     <meta name="description" content="CONCOEUR. " />
     <style is:global>
+
+
+/* Premium gold for header links */
+.menu a{
+  color: #8f7f47;          /* guld */
+  text-decoration: none;
+}
+
+.menu a:hover{
+  color: #d1bf7a;          /* lite ljusare guld vid hover */
+  text-decoration: none;
+}
+
 .manifesto {
   max-width: 70ch;
   margin: 0 auto;
@@ -91,6 +104,17 @@ const { title = "CONCOEUR" } = Astro.props;
   text-decoration: none;
 }
 
+.bottom-space{
+  height: 977px;
+}
+
+@media (max-width: 820px){
+  .bottom-space{
+    height: 120px;
+  }
+}
+
+
     </style>
   </head>
   <body>
@@ -111,10 +135,12 @@ const { title = "CONCOEUR" } = Astro.props;
       </div>
     </header>
 
-  <main class="wrap spaced">
+  <main class="wrap">
   <slot />
+  <div class="bottom-space"></div>
   <footer>© CONCOEUR AB</footer>
 </main>
+
 
   </body>
 </html>
