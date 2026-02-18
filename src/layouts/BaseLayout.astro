@@ -69,8 +69,14 @@ const { title = "CONCOEUR" } = Astro.props;
   .hero{ padding: 56px 16px 28px; min-height: calc(100vh - 96px); }
   .manifest{ font-size: 16px; max-width: 34ch; }
   h1{ font-size: 30px; text-align: center }
-  .nav{ flex-direction: column; gap: 6px; align-items: flex-start; }
-  .menu a{ margin-left: 0; margin-right: 10px; padding: 10px 0; }
+  .nav { flex-direction: column; gap: 10px; align-items: center; }
+  .menu { text-align: center; }
+  .menu a{
+    margin: 0 10px;
+    padding: 10px 6px;
+  }
+}
+
 }
 
 
