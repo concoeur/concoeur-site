@@ -129,6 +129,27 @@ const { title = "CONCOEUR" } = Astro.props;
   }
 }
 
+/* Force mobile centering of header */
+@media (max-width: 900px){
+  header .nav{
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+  header .brand{
+    text-align: center !important;
+    display: block;
+  }
+  header .menu{
+    text-align: center !important;
+  }
+  header .menu a{
+    margin: 0 10px !important;
+    padding: 12px 8px !important;
+    display: inline-block;
+  }
+}
+
 
     </style>
   </head>
